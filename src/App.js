@@ -2,6 +2,8 @@ import Accordian from './components/accordian';
 import StarRating from './components/star-rating';
 import ImageSlider from "./components/image-slider";
 import LoadMoreData from "./components/load-more-data";
+import TreeView from "./components/tree-view";
+import menus from "./components/tree-view/data";
 import './App.css';
 
 function App() {
@@ -16,6 +18,7 @@ function App() {
           limit={"10"}
         /> 
       <LoadMoreData/>
+      <TreeView menus={menus} /> 
     </div>
   );
 }
